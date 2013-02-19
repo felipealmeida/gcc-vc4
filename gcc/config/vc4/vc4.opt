@@ -1,0 +1,12 @@
+
+dummy
+Target Mask(DUMMY)
+Dummy
+
+mgnu
+Target RejectNegative InverseMask(UNIX_ASM)
+Generate code for GNU assembler (gas)
+
+munix
+Target RejectNegative Mask(UNIX_ASM)
+Generate code for UNIX assembler

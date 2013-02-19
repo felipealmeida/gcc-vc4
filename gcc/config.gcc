@@ -2613,6 +2613,9 @@ vax-*-openbsd*)
 	extra_options="${extra_options} openbsd.opt"
 	use_collect2=yes
 	;;
+vc4-*-*)
+        tm_file="vc4/vc4.h dbxelf.h elfos.h"
+        ;;
 xstormy16-*-elf)
 	# For historical reasons, the target files omit the 'x'.
 	tm_file="dbxelf.h elfos.h newlib-stdint.h stormy16/stormy16.h"
@@ -2957,6 +2960,9 @@ if test x$with_cpu = x ; then
     sparc*-*-*)
       with_cpu="`echo ${target} | sed 's/-.*$//'`"
       ;;
+#    vc4-*-*)
+#      with_cpu=vc4
+#      ;;
   esac
 
   # Avoid overriding --with-cpu-32 and --with-cpu-64 values.
